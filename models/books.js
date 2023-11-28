@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const booksSchema = new mongoose.Schema({
   name: String,
   author: String,
+  description: String,
   booked: {
     type: Boolean,
     default: false,
